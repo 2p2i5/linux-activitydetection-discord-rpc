@@ -1,11 +1,3 @@
-"""
-presence_manager.py
-
-Wraps the Discord IPC connection (pypresence under the hood).
-Discord has to be running locally and listening on one of the
-~/.config/discord/discord-ipc-{0..9} sockets for any of this to work.
-"""
-
 import time
 from typing import Optional, List, Dict
 
