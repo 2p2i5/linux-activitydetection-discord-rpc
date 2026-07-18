@@ -22,9 +22,9 @@ sudo apt install libxcb-cursor0
 python3 main.py
 ```
 
-Before running, register an app on Discord:
+oh btw, before running, register an app on Discord:
 1. Go to https://discord.com/developers/applications → **New Application**
 2. Copy the **Application ID** (that's your Client ID)
 3. Under **Rich Presence → Art Assets**, upload the images you want to use
 
-Then just paste the Client ID into the app, fill in Details/State, and hit **Activate Presence** — make sure Discord desktop is actually open first.
+then jus paste the Client ID into the app, fill in Details/State, and hit **Activate Presence** (make sure Discord desktop is actually open first)
