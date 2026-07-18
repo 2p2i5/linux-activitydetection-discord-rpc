@@ -2,7 +2,7 @@
 
 Custom Discord Rich Presence for Linux, made because some custom rps only ships a
 Windows build. Same idea: pick your Details/State text, set some images,
-maybe a couple of buttons, hit activate, done.
+maybe a couple of buttons, hit activate, done. I decided to do it cuz i was bored tho
 
 by 0xmakarov
 
