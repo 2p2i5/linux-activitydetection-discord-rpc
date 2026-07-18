@@ -10,7 +10,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-# (if pip gives you trouble, use this instead:)
+# if pip gives you some trouble, use this instead
 # pip install -r requirements.txt --break-system-packages
 
 # 3. If it complains about "xcb"
