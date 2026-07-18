@@ -6,6 +6,8 @@ maybe a couple of buttons, hit activate, done. I decided to do it cuz i was bore
 
 by 0xmakarov
 
+probably updating it more, idk, enjoy!
+
 ## Heads up before you use it
 
 Discord won't take a rich presence from just anything — you need your own
