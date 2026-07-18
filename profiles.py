@@ -1,9 +1,6 @@
-"""
-profiles.py
-
+"""profiles.py
 Loads/saves Rich Presence profiles from
-~/.config/discord-rpc-linux/profiles.json
-"""
+~/.config/discord-rpc-linux/profiles.json"""
 
 import json
 import os
@@ -47,7 +44,7 @@ def save_all(profiles: Dict[str, Dict[str, Any]]):
     _ensure_config_dir()
     with open(PROFILES_FILE, "w", encoding="utf-8") as f:
         json.dump(profiles, f, indent=2, ensure_ascii=False)
-
+# mkv mkv mkv mkv
 
 def save_profile(name: str, data: Dict[str, Any]):
     profiles = load_all()
