@@ -1,4 +1,6 @@
-Ok, ajustando pra um meio-termo — natural, mas sem exagero:
+Discord RP for Linux cuz i was bored
+
+made by 0xmakarov
 
 ```bash
 # 1. Clone the repo
