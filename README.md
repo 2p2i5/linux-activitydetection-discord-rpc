@@ -1,6 +1,6 @@
 # discord-rpc-linux
 
-Custom Discord Rich Presence for Linux, made because CustomRP only ships a
+Custom Discord Rich Presence for Linux, made because some custom rps only ships a
 Windows build. Same idea: pick your Details/State text, set some images,
 maybe a couple of buttons, hit activate, done.
 
@@ -9,7 +9,7 @@ by 0xmakarov
 ## Heads up before you use it
 
 Discord won't take a rich presence from just anything — you need your own
-"application" registered on their developer portal. That's how CustomRP
+"application" registered on their developer portal. That's how CustomRPs
 works too, it just hides this step from you. Here it's the opposite: you
 register your own app, which means you control exactly what images show up.
 
