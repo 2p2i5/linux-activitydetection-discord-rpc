@@ -2,8 +2,7 @@
 """
 discord-rpc-linux
 by 0xmakarov
-
-Small GUI for setting a custom Discord Rich Presence on Linux (PySide6 + pypresence).
+small GUI for setting a custom Discord Rich Presence on Linux (PySide6 + pypresence). don't mess with something you dont how its working gng
 """
 
 import sys
@@ -139,7 +138,7 @@ class MainWindow(QMainWindow):
         self.minimize_tray_check = QCheckBox("Minimize to tray on close")
         self.minimize_tray_check.setChecked(True)
         root.addWidget(self.minimize_tray_check)
-
+# mkv mkv mkv mkv
         self.status_label = QLabel("Status: disconnected")
         self.status_label.setAlignment(Qt.AlignCenter)
         root.addWidget(self.status_label)
