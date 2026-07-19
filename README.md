@@ -3,10 +3,12 @@ making this because i want my situationship to be able to see the games im playi
 original custom rpc made by 0xmakarov
 expanded upon by me
 
+
+similar install instructions as original:
 ```bash
 # 1. Clone the repo
-git clone https://github.com/0xmakarov/discord-rpc-linux
-cd discord-rpc-linux
+git clone https://github.com/2p2i5/linux-activitydetection-discord-rpc
+cd linux-activitydetection-discord-rpc
 
 # 2. Set up a venv and install dependencies
 python3 -m venv venv
@@ -22,6 +24,9 @@ sudo apt install libxcb-cursor0
 # 4. Run it
 python3 main.py
 ```
+
+but i added `run.sh` which you can run cuz i don't wanna think about how to run it when i do. and maybe it's easier to do a service if you just have a .sh(?)
+
 
 oh btw, before running, register an app on Discord:
 1. Go to https://discord.com/developers/applications → **New Application**
