@@ -1,3 +1,6 @@
+this is NOT done
+
+
 making this because i want my situationship to be able to see the games im playing and discord won't detect my games on ubuntu!!!
 
 original custom rpc made by 0xmakarov
