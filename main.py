@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
+built on:
 discord-rpc-linux
-by 0xmakarov
+by 0xmakarov,  
 small GUI for setting a custom Discord Rich Presence on Linux (PySide6 + pypresence). don't mess with something you dont how its working gng
+expanded upon as linux-activitydetection-discord-rpc
 """
 
 import sys
@@ -37,7 +39,7 @@ from pypresence.exceptions import DiscordNotFound, InvalidID, PipeClosed
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("discord-rpc-linux")
+        self.setWindowTitle("linux-activitydetection-discord-rpc")
         self.resize(460, 640)
 
         self.presence = PresenceManager()
