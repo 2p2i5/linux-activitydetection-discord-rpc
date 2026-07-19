@@ -76,7 +76,7 @@ class MainWindow(QMainWindow):
 
         self.client_id_edit = QLineEdit()
         self.client_id_edit.setPlaceholderText("Application ID from Discord Developer Portal")
-        form.addRow("Client ID:", self.client_id_edit)
+        form.addRow("Client/Application ID:", self.client_id_edit)
 
         self.details_edit = QLineEdit()
         self.details_edit.setPlaceholderText("First line (e.g. Playing Story Mode)")
