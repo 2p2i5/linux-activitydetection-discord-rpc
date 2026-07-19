@@ -3,6 +3,8 @@ making this because i want my situationship to be able to see the games im playi
 original custom rpc made by 0xmakarov
 expanded upon by me
 
+sorry for the bunch of bad quality commit messages but yeah
+
 
 similar install instructions as original:
 ```bash
