@@ -1,10 +1,9 @@
 this is NOT done
 
 
-making this because i want my situationship to be able to see the games im playing and discord won't detect my games on ubuntu!!!
+making this because i want my situationship to be able to see the games im playing and discord won't detect my games on ubuntu!!! i have no idea what i'm doing but it seems i'm making progress
 
-original custom rpc made by 0xmakarov
-expanded upon by me
+many many thanks to the people in the Discord Linux (https://discord.gg/discord-linux) & Discord Developers (https://discord.gg/discord-developers) communities. i would have given up by now w/o their guidance (https://discord.com/channels/613425648685547541/1130595287078015027/1528497133412552765 & https://discord.com/channels/96230004047740928/257592796704145429/1528494216358133892)
 
 sorry for the bunch of bad quality commit messages but yeah
 
