@@ -1,10 +1,3 @@
-echo "running command source venv/bin/activate"
+#!/bin/bash
 
-source venv/bin/activate
-
-echo "running command python3 main.py"
-
-python3 main.py
-
-
-sleep 10
+source ./venv/bin/activate && python3 main.py
