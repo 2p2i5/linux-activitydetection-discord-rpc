@@ -20,3 +20,6 @@ env/
 
 # detectables thing
 detectable.json
+
+# mailmap
+.mailmap
