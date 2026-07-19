@@ -17,3 +17,6 @@ env/
 
 # SO
 .DS_Store
+
+# detectables thing
+detectable.json
