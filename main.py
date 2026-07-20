@@ -27,6 +27,8 @@ config = True
 itopen = False
 client_id = 0
 
+print("This project supports Palestine and is against AI usage.")
+
 while True:
     if config:
         ans = input("\nPlease select what you want to do:\n Type 'p' to see currently running processes.\n Type 's' to add a process to the detection list.\n Type 'a' to activate the detector.\n\n> ")
