@@ -10,3 +10,5 @@ echo "running program"
 echo " "
 
 source ./venv/bin/activate && python3 main.py
+
+sleep 2

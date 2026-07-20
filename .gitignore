@@ -18,8 +18,6 @@ env/
 # SO
 .DS_Store
 
-# detectables thing
+# dynamic files
 detectable.json
-
-# mailmap
-.mailmap
+list.txt
