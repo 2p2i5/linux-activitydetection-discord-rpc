@@ -1,5 +1,6 @@
-this is NOT done at the moment
+this is NOT done
 
+removing fork because i completely removed all the major scripts lol, this was originally a fork of https://github.com/0xmakarov/discord-rpc-linux
 
 making this because i want my situationship to be able to see the games im playing and discord won't detect my games on ubuntu!!! i have no idea what i'm doing but it seems i'm making progress
 
@@ -22,7 +23,7 @@ pip install -r requirements.txt
 # if pip gives you some trouble, use this instead
 # pip install -r requirements.txt --break-system-packages
 
-# 3. If it complains about "xcb"
+# 3. If it complains about "xcb" (this instruction was from the original thing i forked from: https://github.com/0xmakarov/discord-rpc-linux idk if it's needed)
 sudo apt install libxcb-cursor0
 
 # 4. Run it
