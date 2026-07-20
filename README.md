@@ -1,4 +1,4 @@
-this is NOT done
+this is NOT done at the moment
 
 
 making this because i want my situationship to be able to see the games im playing and discord won't detect my games on ubuntu!!! i have no idea what i'm doing but it seems i'm making progress
