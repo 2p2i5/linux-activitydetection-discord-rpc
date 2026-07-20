@@ -9,8 +9,20 @@ from pathlib import Path
 # i swear someday i will organize it into functions
 
 sleepTime = 15 # The amount of time the program will pause before checking if the game is running again. Pypresence claimed that you can only change the RPC every 15 seconds, so the default is the recommendation. Not sure of the problems with ratelimit beyond that.
+config = True
+itopen = False
+client_id = 0
+
 
 def detectProcess():
+    dalist = Path("list.json")
+    if not dalist.exists():
+        config = True
+        print("!!! No game list found. Please configure some games first with the 's' option.")
+        print("Exiting program...")
+        time.sleep(3)
+        quit()
+
     with open("list.json", "r") as f:
         content = json.load(f)
 
@@ -23,11 +35,11 @@ def detectProcess():
     
     return False
 
-config = True
-itopen = False
-client_id = 0
-
+print(" ")
+print(" ")
+print("You are running version 1.0.0")
 print("This project supports Palestine and is against AI usage.")
+print(" ")
 
 while True:
     if config:
