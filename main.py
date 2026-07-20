@@ -1,1 +1,1 @@
-import pypresence
+from pypresence import Presence
