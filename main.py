@@ -6,15 +6,26 @@ from pypresence import Presence
 from pathlib import Path
 
 # sorry for the sloppy code but at least it's not ai!!!!!
+# i swear someday i will organize it into functions
 
-# client_id = "358425800766128128"
-# RPC = Presence(client_id)  # Initialize the client class
-# RPC.connect()  # Start the handshake loop
+sleepTime = 15 # The amount of time the program will pause before checking if the game is running again. Pypresence claimed that you can only change the RPC every 15 seconds, so the default is the recommendation. Not sure of the problems with ratelimit beyond that.
 
-# if input("\nY to disconnect: ").lower() == "y":
-#     RPC.close()
+def detectProcess():
+    with open("list.json", "r") as f:
+        content = json.load(f)
+
+    for p in psutil.process_iter():
+        for i in content["games"]:
+            # print(i["processname"],p.name())
+            if i["processname"] == p.name():
+                # print("Found running process")
+                return i["discordid"]
+    
+    return False
 
 config = True
+itopen = False
+client_id = 0
 
 while True:
     if config:
@@ -69,40 +80,35 @@ while True:
                 dalist = Path("list.json")
                 if not dalist.exists():
                     print("list.json doesn't exist, making one")
-                    template = {"games":[{"processname":"examplethatisntrealihope.ex","discordid": "0"}]}
+                    template = {"games":[{"processname":processName,"discordid": gameID}]}
                     with open('list.json', 'w') as json_file:
                         json.dump(template, json_file, indent=4)
+                else:
+                    with open("list.json", "r+") as file:
+                        list = json.load(file)
+                        list["games"].append(new_game)
+                        file.seek(0)
+                        json.dump(list, file, indent=4)
 
-
-                with open("list.json", "r+") as file:
-                    list = json.load(file)
-                    list["games"].append(new_game)
-                    file.seek(0)
-                    json.dump(list, file, indent=4)
-                # list = open("list.json", "a")
-                # list.write(str(processName)+"\n"+str(gameID)+"\n")
-                # list.close()
                 print("\nWritten to list.json. Deleting processes from the list must be done manually, by editing the file list.json.\n")
-                
-                
-
         elif ans.lower() == "a":
             config = False
+            print("\nStarting detection..")
     else:
-        list = open("list.json", "r")
-        content = list.read()
-        list.close()
-        listed = content.split("\n")
-        for p in psutil.process_iter():
-            for i in listed:
-                if p.name() == i:
-                    print("detected "+ i)
-                    break
-        print("finished detecting")
-        time.sleep(10)
-            
+        identity = detectProcess()
+        if identity != False and identity != client_id:
+            client_id = identity
+            print("attempting to set rpc to "+identity)
+            RPC = Presence(client_id)
+            RPC.connect()
+            RPC.update()
+            itopen = True
+        elif identity == False and itopen:
+            try:
+                RPC.close()
+                itopen = False
+            except():
+                print("exception")
+        
+        time.sleep(sleepTime) # the pypresence thing said that you can only change presence every 15 seconds so i recommend that
 
-
-
-# while True:  # The presence will stay on as long as the program is running
-    # time.sleep(15)  # Can only update rich presence every 15 seconds
