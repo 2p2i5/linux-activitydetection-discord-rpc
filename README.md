@@ -1,5 +1,7 @@
 A solution to Discord's problem of not detecting activities on Ubuntu Linux. This program detects configured processes and activates a corresponding rich presence for Discord. Built-in search for detectable applications by calling https://discord.com/api/v10/games/detectable.
 
+Command line only, but instructions are pretty simple. Contributions to improve the program are welcome!
+
 
 made this because i want my situationship to be able to see the games im playing and discord won't detect my games on ubuntu!!! i have no idea what i'm doing but it seems i'm making progress
 
