@@ -42,7 +42,7 @@ while True:
             while searching:
                 searchers = input("\nIn order to display the rich presence the way I'm doing it, we need to find the ID of the game. The program will now search detectable.json for games with that ID, and will add it to the list below the game name. Would you like to add any other search queries apart from '"+processName+"'? You can manually search the file for it or find it in someone's profile and paste the discord game ID here (or find the search term that will work), or make your own rich presence application and paste its ID.\n Type 's' to add search terms (search may take long).\n Type 'i' to manually add the ID.\n> ")
                 if searchers == "i":
-                    gameID = searchers
+                    gameID = input("Input the ID now.\n> ")
                 elif searchers == "s":
                     agreed = False
                     while not agreed:
