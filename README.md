@@ -27,7 +27,7 @@ pip install -r requirements.txt
 sudo apt install libxcb-cursor0
 
 # 4. Run it
-python3 main.py
+./run.sh
 ```
 
 but i added `run.sh` which you can run cuz i don't wanna think about how to run it when i do. and maybe it's easier to do a service if you just have a .sh(?)
