@@ -36,7 +36,6 @@ def detectProcess():
     return False
 
 print(" ")
-print(" ")
 print("You are running version 1.0.0")
 print("This project supports Palestine and is against AI usage.")
 print(" ")
