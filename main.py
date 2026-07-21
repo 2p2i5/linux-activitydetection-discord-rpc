@@ -36,7 +36,7 @@ def detectProcess():
     return False
 
 print("\n\n\n\n")
-print("You are running version 1.0.2")
+print("You are running version 1.0.3")
 print("This project supports Palestine and is against AI usage.")
 
 while True:
@@ -110,16 +110,18 @@ while True:
         identity = detectProcess()
         if identity != False and identity != client_id:
             if itopen:
+                print("Closing RPC, detection found different matching process.")
                 RPC.close()
                 itopen = False
             client_id = identity
-            print("attempting to set rpc to "+identity)
+            print("Attempting to set rpc to '"+identity+"'.")
             RPC = Presence(client_id)
             RPC.connect()
             RPC.update()
             itopen = True
-        elif identity == client_id and itopen:
+        elif identity == False and itopen:
             try:
+                print("Closing RPC, detection found no matching process.")
                 RPC.close()
                 itopen = False
             except():
