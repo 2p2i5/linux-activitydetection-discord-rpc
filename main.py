@@ -36,7 +36,7 @@ def detectProcess():
     return False
 
 print("\n\n\n\n")
-print("You are running version 1.0.0")
+print("You are running version 1.0.1")
 print("This project supports Palestine and is against AI usage.")
 
 while True:
@@ -52,7 +52,7 @@ while True:
             gameID = "none yet"
             searching = True
             while searching:
-                searchers = input("\nIn order to display the rich presence the way I'm doing it, we need to find the ID of the game. The program will now search detectable.json for games with that ID, and will add it to the list below the game name. Would you like to add any other search queries apart from '"+processName+"'? You can manually search the file for it or find it in someone's profile and paste the discord game ID here (or find the search term that will work), or make your own rich presence application and paste its ID.\n Type 's' to add search terms (search may take long).\n Type 'i' to manually add the ID.\n> ")
+                searchers = input("\nTo display the corresponding rich presence for a process, the discord game ID of that process is needed. You can now either use different search terms to browse Discord's list of detectable programs (time this takes may depend on device), or input the game/application ID manually. The list is found by sending a request (including opening the page in a browser) to https://discord.com/api/v10/games/detectable, and you can search that list manually. Alternatively, you can make your own application in the Discord Developer Portal and put its client/application ID here (Discord TOS may have issues with making applications that 'impersonate' existing games, so be careful).\n Type 's' to search with terms.\n Type 'i' to manually add the ID.\n> ")
                 if searchers == "i":
                     gameID = input("Input the ID now.\n> ")
                 elif searchers == "s":
@@ -77,7 +77,7 @@ while True:
                         for q in terms:
                             # print("query:"+str(q))
                             # print(str(gam["name"]).lower().__contains__(q.lower()))
-                            if str(gam["name"]).lower().__contains__(q.lower()):
+                            if str(gam["name"]).lower().__contains__(q.lower()) and searching:
                                 accepted = input("\nFound a match.\n Discord recorded game name: "+ gam["name"] +"\n Discord recorded game ID: "+ gam["id"]+ "\n\nWould you like to accept this, or keep searching? (Y/N)\n>")
                                 if accepted.lower() == "y":
                                     gameID = gam["id"]
