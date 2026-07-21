@@ -36,7 +36,7 @@ def detectProcess():
     return False
 
 print("\n\n\n\n")
-print("You are running version 1.0.1")
+print("You are running version 1.0.2")
 print("This project supports Palestine and is against AI usage.")
 
 while True:
@@ -109,13 +109,16 @@ while True:
     else:
         identity = detectProcess()
         if identity != False and identity != client_id:
+            if itopen:
+                RPC.close()
+                itopen = False
             client_id = identity
             print("attempting to set rpc to "+identity)
             RPC = Presence(client_id)
             RPC.connect()
             RPC.update()
             itopen = True
-        elif identity == False and itopen:
+        elif identity == client_id and itopen:
             try:
                 RPC.close()
                 itopen = False
